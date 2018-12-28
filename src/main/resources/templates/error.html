@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Error--RadioTube</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/myTheme/custom.css}">
+	<script type="text/javascript" th:src="@{/js/jquery-3.3.1.slim.min.js}" ></script>
+    <script type="text/javascript" th:src="@{/js/popper.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.js}"></script>
+    <script type="text/javascript" th:src="@{/myTheme/myJS.js}"></script>
+	
+</head>
+<body class="bg-light" style="background-image:url('images/back2.jpeg');background-attachment:fixed;">
+
+		 <!--Header-->
+<div id="allHeader" style="width: 100%; padding:0%; position: fixed;  z-index:1;">
+
+		  <nav id="header1" style="background-color:#f8f9fa; width: 100%!important; height:49px; border-bottom:1px solid #f2f2f2;" class="  text-center navbar navbar-expand-lg navbar-dark " > 
+		  	<div id="toz" style="width: 40%;"><img alt="RTLogo" height=30px width=175px th:src="@{/images/RadioTube.png}"></div>
+    		<div id="topsrch" class=" text-center" >
+    			<form class="form-inline my-lg-0" style="padding: 0%; align-items: center;">
+      				<input style="border-radius:15px; width: 50%;" class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
+      				<button style="border-radius: 5px;" class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    			</form>
+ 			 </div>
+		  </nav>
+
+
+		  <nav id="header2" style="box-shadow: 10px 0px 15px #888888; background-color:#f8f9fa; width: 100%;   border-bottom:1px solid rgba(0, 0, 0, 0.1); border-top-right-radius: 0px; border-top-left-radius: 0px; padding:1px;" class="text-center navbar navbar-expand-lg">
+  			<a class="navbar-brand" style="color: black;" href="#">RadioTube</a>
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   				 <span class="navbar-toggler-icon">Menu</span>
+  				</button>
+
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    <ul class="navbar-nav mr-auto">
+				      <li class="nav-item">
+				        <a class="nav-link" style="color: black; border-right:1px solid #f2f2f2;" th:href="@{/}">Home <span class="sr-only">(current)</span></a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" style="color: black; border-right:1px solid #f2f2f2;" th:href="@{/program}">Programs</a>
+				      </li>
+				       <li class="nav-item">
+				        <a class="nav-link" style="color: black; border-right:1px solid #f2f2f2;" th:href="@{/music}">Music</a>
+				      </li>
+				       <li class="nav-item">
+				        <a class="nav-link" style="color: black; border-right:1px solid #f2f2f2;" th:href="@{/channels}">Channels</a>
+				      </li>
+				      <li class="nav-item dropdown" >
+				        <a class="nav-link dropdown-toggle"  style="color: black;  border-right:1px solid rgba(0, 0, 0, 0.1);" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          
+				        </a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				          <a class="dropdown-item" href="#">Action</a>
+				          <a class="dropdown-item" href="#">Another action</a>
+				          <div class="dropdown-divider"></div>
+				          <a class="dropdown-item" href="#">Something else here</a>
+				        </div>
+				      </li>
+				    </ul>
+				    
+				    <div id="logo2" style="width: 50%;"><img alt="RTLogo" height=20px width=110px th:src="@{/images/RadioTube.png}"></div>
+				    
+				    <div id="dis" style="float: right;">
+    					<form class="form-inline my-lg-0" style="padding: 0%; align-items: center;">
+      						<input style="border-radius:15px; width: 30%;" class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
+      						<button style="border-radius: 15px;" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    					</form>
+ 			 		</div>
+				  
+				   
+				  </div>
+		  </nav>
+	</div>
+	
+
+	<div class="container" style="position:relative; top:90px; background-color: white ;padding: 0px;">
+	<br><br><br>
+	
+	<div class="col-md-5" style="margin-left:30%; border-right:1px solid silver; border-left:1px solid silver;">
+	<h1>Oops!</h1>
+	<h2>An Error occurred while processing your Request  </h2>
+	<div>
+	<p>Causes to check</p>
+	<ul>
+		<li>Session Error</li>
+		<li>Unauthorized access</li>
+		<li>URL Error</li>
+		<li>Parsing Error</li>
+	</ul>
+	</div>
+	</div>
+	
+	<br><br><br>
+	</div>
+	
+	<!--Footer-->
+<footer class="container-fluid bg-grey py-5" style="background-color:#f8f9fa; padding:10px!important; box-shadow: 0px -2px 18px #888;; border-top: 1px solid silver;  margin-top:100px;">
+<div class="container">
+   <div class="row">
+      <div class="col-md-6">
+         <div class="row">
+            <div class="col-md-6 ">
+               <div class="logo-part">
+                  <img th:src="@{/images/RadioTube.png}" class="w-50 logo-footer" >
+                  <p style="margin:0px;">5684 Laurel Dr. King Of Prussia, PA 19406 </p>
+                  <p style="margin:0px;">+25124324432</p>
+               </div>
+            </div>
+            <div class="col-md-6 px-4">
+               <h6> About Company</h6>
+               <p>But horizontal lines can only be a full pixel high.</p>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-6">
+         <div class="row">
+            <div class="col-md-3">
+               <h6> Misc</h6>
+               <div class="row ">
+                  <div class="col-md-3">
+                     <ul>
+                        <li> <a th:href="@{/about}"> About</a> </li>
+                        <li> <a th:href="@{/admin}"> Admin</a> </li>
+                     </ul>
+                  </div>
+                  
+               </div>
+            </div>
+            <div class="col-md-9" style="margin-top:20px; border-left:1px solid silver;">
+            	<center>
+                     <p style="margin:0px;">Copyright 2018 Minamn Media PLC</p>
+                     <p>Powered by Xlogos</p>
+                </center>
+                  </div>
+          
+         </div>
+      </div>
+   </div>
+</div>
+</footer>
+<!--Footer End-->
+</body>	
+</html>

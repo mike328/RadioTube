@@ -1,0 +1,24 @@
+#header1{
+	visibility:visible;
+	transition: 0.1s;
+}
+#dis{
+	visibility: hidden;
+	transition: 0.05s;
+}
+#logo2{
+	visibility: hidden;
+	transition: 0.05s;
+}
+#sha{
+	border:none;
+	transition: 0.1s;
+}
+#sha:hover{
+	border:1px solid white!important;
+}
+#boxer{
+	
+	width: 900px;
+	height: 500px;
+}
